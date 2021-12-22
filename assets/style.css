@@ -1,0 +1,210 @@
+/* The body parameters for the whole project */
+body{
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* The parameters for every list item in the project */
+li
+{
+    display: inline;
+    position: relative;
+    bottom: -10px;
+    margin-left: 25px;
+}
+/* The parameters for every h2 in the project */
+h2{
+    position: absolute; 
+    top: 950px; 
+    left: 500px; 
+    width: 100%; 
+}
+/* The a:link and a:visited represent the anchor link colors for when the links normal color state and its pressed color state */
+a:link{
+    color: rgb(104, 169, 212);
+}
+a:visited{
+    color:rgb(88, 142, 179);
+}
+/*The parameters of the entire header*/
+.main-header{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(47, 68, 97);
+    padding: 40px;
+}
+/* The parameters for the text within the header that is not the nav bar */
+.headerText
+{
+    position:relative;
+    text-align: left;
+    font-size:x-large;
+    color:rgb(47, 68, 97);
+    padding-left: 1px;
+    padding-right: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(104, 169, 212);
+    
+}
+/* The behavior of the profile pic image in the header */
+.headerImage{
+    position:relative;
+    text-align:left;
+
+}
+/* The parameters of the navbar */
+.navbar
+{
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(104, 169, 212);
+    padding-right: 30px;
+
+}
+/* The parameters of the banner image below the header */
+.banner
+{
+    height: 200px;
+    background: url('./portfolio-header-img.jpg')
+}
+/* The position and margins of each row*/
+.row1
+{
+    float:center;
+    margin-top:50px;
+}
+.row2
+{
+    float:center;
+    margin-top:50px;
+}
+.row3
+{
+    float:center;
+    margin-top:50px;
+}
+/* The parameters of the left column used in all three rows */
+.columnLeft{
+    flex:auto;
+    float: left;
+    width: 10%;
+    margin-left: 10%;
+    margin-right: 2%;
+    border-right: 5px solid rgb(104, 169, 212);
+}
+/* The parameters of the right column used in all three rows */
+.columnRight
+{
+    float: center;
+    width: 75%;
+    padding-left: 10%;
+}
+
+/* About me */
+/* The parameters of the title text for the About Me section */
+  .aboutMeTitle {
+    flex: 1;
+    background-color: #ffffff;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+  }
+  /* The parameters of the body text for the About Me section */
+  .aboutMeBody {
+    flex: 1;
+    background-color: #ffffff;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+  }
+  
+  /* Work */
+  /* The parameters of the text for the Work title section */
+  .workTitle {
+    flex: auto;
+    background-color: #ffffff;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+  }
+/* Setting up the image grid to be used in the Work column right  */
+.image-grid
+{
+    --gap: 16px;
+    --num-cols: 2;
+    --num-height: 200px;
+
+    box-sizing:border-box;
+    padding:var(--gap);
+
+    display:grid;
+
+    grid-template-columns: repeat(var(--num-cols),2fr);
+    grid-auto-rows: var(--num-height);
+    gap: var(--gap);
+}
+/* Giving the images within the image-grid specific parameters */
+.image-grid > img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:.75;
+    transition: .5s ease;
+    backface-visibility:visible;
+    border: 5px solid rgb(104, 169, 212);
+}
+/* Creating an opacity overlay on image hover */
+.image-grid > img:hover{
+    opacity: 1;
+    transition: .5s ease;
+    display:block;
+}
+
+/*Unfortunately this is not scaling correctly, but it should be adjusting the number of columns and rows depending on the screen's size*/
+ @media only screen and (max-width:700px){
+    
+    .image-grid{
+        --num-cols: 1;
+        --row-height: 100px;
+    }
+} 
+ @media only screen and (max-width:1000px){
+
+        .image-grid{
+            --num-cols: 2;
+            --row-height: 300px;
+        }
+} 
+/* Providing extra parameters to the top image in the grid to stay larger than the rest */
+.image-grid-col-2{
+    grid-column: span 2;
+}
+.image-grid-row-2{
+    grid-row: span 2;
+} 
+
+  /* Contact Section */
+  /* The parameters for the Contract title text */
+.contactTitle {
+    flex: auto;
+    display:flex;
+    background-color: #ffffff;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+  }
+  /* The parameters for the Contract body text */
+  .contactBody {
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(72, 120, 151);
+    padding-top: 20px;
+  }
