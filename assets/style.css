@@ -21,6 +21,9 @@ h2{
     left: 500px; 
     width: 100%; 
 }
+main{
+    flex-grow: 2;
+}
 /* The a:link and a:visited represent the anchor link colors for when the links normal color state and its pressed color state */
 a:link{
     color: rgb(104, 169, 212);
@@ -41,19 +44,14 @@ a:visited{
     position:relative;
     text-align: left;
     font-size:x-large;
-    color:rgb(47, 68, 97);
+    color:rgb(110, 157, 223);
     padding-left: 1px;
     padding-right: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(104, 169, 212);
+    background-color: rgba(67, 108, 136, 0.5);
     
 }
-/* The behavior of the profile pic image in the header */
-.headerImage{
-    position:relative;
-    text-align:left;
 
-}
 /* The parameters of the navbar */
 .navbar
 {
@@ -166,15 +164,23 @@ a:visited{
 }
 
 /*Unfortunately this is not scaling correctly, but it should be adjusting the number of columns and rows depending on the screen's size*/
- @media only screen and (max-width:700px){
+ @media only screen and (max-width:900px){
     
+    .columnLeft{
+        width:50%;
+        float: center;
+        
+    }
     .image-grid{
         --num-cols: 1;
         --row-height: 100px;
     }
 } 
  @media only screen and (max-width:1000px){
-
+    .columnLeft{
+        width:100%;
+        float: left;
+    }
         .image-grid{
             --num-cols: 2;
             --row-height: 300px;

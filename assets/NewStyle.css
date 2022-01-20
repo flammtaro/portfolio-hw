@@ -1,0 +1,32 @@
+.navbar{
+   padding:25px;
+}
+.navbar-nav
+{
+    position:relative;
+    left:90%;
+}
+
+.container
+{
+    margin-top:5%;
+}
+.side-content
+{
+    position:relative;
+    right:10%;
+    
+}
+.main-content
+{
+    position:relative;
+    right:10%;
+    border-left:2px solid black;
+}
+.card-body
+{
+    text-align: center;
+}
+.card{
+    margin: 5px;
+}

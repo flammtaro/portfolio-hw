@@ -4,104 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-
     <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/NewStyle.css">
 </head>
 <body>
     <header>
-        <div class="main-header">
-            <!-- This is the header text, and below it the header image (containing an image of myself) -->
-            <div class="headerText">
-                <h1>Reid Somers Flamm</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Reid Somers Flamm</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#about-me">About Me</a>
+                <a class="nav-item nav-link" href="#work">Work</a>
+                <a class="nav-item nav-link" href="#contact-me">Contact</a>
+              </div>
             </div>
-            <div class="headerImage">
-                <img src="assets/image-asset.jpeg" width= 200px, height=120px>
-            </div>
-            <!-- This is the setup for the NavBar (it is in a list) -->
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="#AboutMeHeader">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#WorkHeader">Work</a>
-                    </li>
-                    <li>
-                        <a href="#ContactMeHeader">Contact</a>  
-                    </li>
-                </ul>
-            </div>
-        </div>
+          </nav>
     </header>
-    <!-- This is the large banner of the seattle Pike Place market that is located below the header -->
-    <div class= "banner"></div>
-
     <main>
-        <!-- This is the beginning of the different sections on the website.  -->
-        <!-- Row1 is the entire AboutMe section, containing a left and right column to separate the title and the body -->
-        <div class="row1">       
-            <div class ="columnLeft">               
-                 <div class="aboutMeTitle">
-                <h1 id="AboutMeHeader">About Me</h1>
+        <div class="container">
+            <div class="row" id="about-me">
+                <div class="col-4-lg col-md-3 col-sm-2 col-2 side-content">
+                    <h1>About Me</h1>
                 </div>
-            </div>
-            <div class ="columnRight">
-                <div class="aboutMeBody">
-                    <p>
-                        With Reid, any new form of technology is an opportunity to learn. His passion for seeking new pathways in technological development first brought him to creating and designing game experiences for the video game industry. He now brings this technological experience and understanding of 3D spaces into the world of laser scanning and digital capture.
+
+                <div class="col-12-lg col-md-8 col-sm-4 col-4 main-content">
+                    <p>With Reid, any new form of technology is an opportunity to learn. His passion for seeking new pathways in technological development first brought him to creating and designing game experiences for the video game industry. He now brings this technological experience and understanding of 3D spaces into the world of laser scanning and digital capture.
                     </p>
                 </div>
             </div>
-        </div>
-        <br>
-        <!-- Row2 is the image grid system, and the title. It is separated into two columns, with the right being the image grid system -->
-        <div class="row2">       
-            <div class ="columnLeft">               
-                 <div class="workTitle">
-                <h1 id="WorkHeader">Work</h1>
+            <br>
+            <div class="row" id="work">
+                <div class="col-4-lg col-md-3 col-sm-2 col-2 side-content">
+                    <h1>Work</h1>
+                </div>
+                <div class="col-12-lg col-md-8 col-sm-4 col-4 main-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/furiendr-home.PNG" alt="Furiendr Adoption Site">
+                                <div class="card-body">
+                                    <h5 class="card-title">Furiendr</h5>
+                                    <p class="card-text">Like Tinder, but for pet adoption!</p>
+                                    <a href="https://mweyer.github.io/First-Group-Project/" class="btn btn-dark">Github</a>
+                                    <a href="https://mweyer.github.io/First-Group-Project/" class="btn btn-dark">Webpage</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card small-card">
+                                    <img class="card-img-top" style="height:200px" src="assets/Blaero_Lighting_Test_01.png" alt="Blaero">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Blaero</h5>
+                                        <p class="card-text">A physics-based multiplayer arena game.</p>
+                                        <a href="http://www.reidflamm.com/blaero" class="btn btn-dark">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img-top" style="height:200px" src="assets/o_image.PNG" alt="[o]">
+                                    <div class="card-body">
+                                        <h5 class="card-title">[o]</h5>
+                                        <p class="card-text">A ball physics procedural adventure game!</p>
+                                        <a href="http://www.reidflamm.com/new-page" class="btn btn-dark">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img-top" style="height:200px" src="assets/sniper-x.jpeg" alt="Sniper-X">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sniper-X</h5>
+                                        <p class="card-text">A mobile shooter starring Jason Statham.</p>
+                                        <a href="http://www.reidflamm.com/sniper-x" class="btn btn-dark">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img-top" style="height:200px" src="assets/deer-hunter.jpeg" alt="Deer Hunter">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Deer Hunter</h5>
+                                        <p class="card-text">A mobile shooter simulating the hunter experience.</p>
+                                        <a href="http://www.reidflamm.com/deer-hunter-2014" class="btn btn-dark">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class ="columnRight">
-                <div class="image-grid text-grid">
-                    <img class="image-grid-col-2 image-grid-row-2" src="assets/Blaero_Lighting_Test_01.png" alt="Blaero">
-                    <img src="assets/o_image.PNG" alt="[o]">
-                    <img src="assets/image-asset.png" alt="Battle Bandits">
-                    <img src="assets/sniper-x.jpeg" alt="Sniper-X">
-                    <img src="assets/deer-hunter.jpeg" alt="Deer Hunter">
+            <br>
+            <div class="row" id="contact-me">
+                <div class="col-4-lg col-md-3 col-sm-2 col-2 side-content">
+                    <h1>Contact</h1>
                 </div>
-            </div>
-        </div>
-        <br>
-        <!--Row3 is the entire Contact Me section. It contains a list for the different subtexts, and links to different websites. It also contains a left and right column like the previous sections-->
-        <div class="row3">       
-            <div class ="columnLeft">               
-                 <div class="contactTitle">
-                <h1 id="ContactMeHeader">Contact Me</h1>
-                </div>
-            </div>
-            <div class ="columnRight">
-                <div class="contactBody">
-                    <ul>
-                        <li>
-                            <a>###-###-####</a>
-                        </li>
-                        <li>
-                            <a>reidsomersflamm@gmail.com</a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="https://www.spotify.com/">Spotify</a> 
-                        </li>
-                    </ul>                
+
+                <div class="col-12-lg col-md-8 col-sm-4 col-4 main-content">
+                    <section class="wow fadeIn bg-gray animated" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 center-col text-center"> <a href="https://www.instagram.com/gearleg/" class="btn btn-lg social-icon button" data-abc="true"><i class="fa fa-instagram btn-round"></i></a> <a href="https://github.com/flammtaro" class="btn btn-lg social-icon button" data-abc="true"><i class="fa fa-github-alt btn-round"></i></a><a href="https://www.linkedin.com/in/reid-flamm-53496825/" class="btn btn-lg social-icon button" data-abc="true"><i class="fa fa-linkedin btn-round"></i></a></div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
